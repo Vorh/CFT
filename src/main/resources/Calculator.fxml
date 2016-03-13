@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="225.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TabPane prefHeight="296.0" prefWidth="225.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Обычный">
+               <content>
+                  <Pane prefHeight="296.0" prefWidth="225.0" styleClass="root">
+                     <children>
+                        <Button fx:id="click_1" layoutX="14.0" layoutY="193.0" mnemonicParsing="false" onAction="#click_1" prefHeight="30.0" prefWidth="30.0" styleClass="button1" stylesheets="@style.css" text="1" />
+                        <Button fx:id="click_2" layoutX="51.0" layoutY="193.0" mnemonicParsing="false" onAction="#click_2" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="2" />
+                        <Button fx:id="click_3" layoutX="90.0" layoutY="193.0" mnemonicParsing="false" onAction="#click_3" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="3" />
+                        <Button fx:id="minus" layoutX="136.0" layoutY="193.0" mnemonicParsing="false" onAction="#click_minus" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="-" />
+                        <Button fx:id="click_5" layoutX="51.0" layoutY="159.0" mnemonicParsing="false" onAction="#click_5" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="5" />
+                        <Button fx:id="click_4" layoutX="90.0" layoutY="159.0" mnemonicParsing="false" onAction="#click_4" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="4" />
+                        <Button fx:id="click_6" layoutX="14.0" layoutY="159.0" mnemonicParsing="false" onAction="#click_6" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="6" />
+                        <Button fx:id="plus" layoutX="173.0" layoutY="193.0" mnemonicParsing="false" onAction="#click_plus" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="+" />
+                        <Button fx:id="click_9" layoutX="90.0" layoutY="126.0" mnemonicParsing="false" onAction="#click_9" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="9" />
+                        <Button fx:id="click_8" layoutX="51.0" layoutY="126.0" mnemonicParsing="false" onAction="#click_8" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="8" />
+                        <Button fx:id="click_7" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#click_7" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="7" />
+                        <Button fx:id="division" layoutX="173.0" layoutY="159.0" mnemonicParsing="false" onAction="#click_division" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="/" />
+                        <TextField fx:id="fieldInput" layoutX="14.0" layoutY="15.0" prefHeight="25.0" prefWidth="197.0" styleClass="text" />
+                        <TextField fx:id="fieldOutput" editable="false" layoutX="14.0" layoutY="50.0" onMouseClicked="#fieldOutput_copy" pickOnBounds="false" prefHeight="25.0" prefWidth="197.0" styleClass="text" />
+                        <Button fx:id="click_0" layoutX="14.0" layoutY="227.0" mnemonicParsing="false" onAction="#click_0" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="0" />
+                        <Button fx:id="equally" layoutX="51.0" layoutY="227.0" mnemonicParsing="false" onAction="#click_equally" prefHeight="30.0" prefWidth="69.0" styleClass="equally" stylesheets="@style.css" text="=" />
+                        <Button fx:id="multiplication" layoutX="136.0" layoutY="159.0" mnemonicParsing="false" onAction="#click_multiplication" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="*" />
+                        <Button fx:id="leftB" layoutX="173.0" layoutY="126.0" mnemonicParsing="false" onAction="#click_LeftB" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text=")" />
+                        <Button fx:id="rightB" layoutX="136.0" layoutY="126.0" mnemonicParsing="false" onAction="#click_RightB" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="(" />
+                        <Button fx:id="percent" layoutX="136.0" layoutY="227.0" mnemonicParsing="false" onAction="#click_percent" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="^" />
+                        <Button fx:id="comma" layoutX="173.0" layoutY="227.0" mnemonicParsing="false" onAction="#click_comma" prefHeight="30.0" prefWidth="30.0" styleClass="button1" text="," />
+                        <Button fx:id="c" layoutX="52.0" layoutY="90.0" mnemonicParsing="false" onAction="#click_c" prefHeight="30.0" prefWidth="67.0" styleClass="equally" stylesheets="@style.css" text="C" />
+                        <Button fx:id="ce" layoutX="137.0" layoutY="90.0" mnemonicParsing="false" onAction="#click_ce" prefHeight="30.0" prefWidth="67.0" styleClass="equally" stylesheets="@style.css" text="CE" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab text="Перевод">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="root">
+                     <children>
+                        <TextField fx:id="fieldInputT" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="197.0" styleClass="text" />
+                        <TextField fx:id="fieldOutputT" layoutX="14.0" layoutY="53.0" onMouseClicked="#fieldOutputT_copy" prefHeight="25.0" prefWidth="197.0" styleClass="text" />
+                        <Button fx:id="transferT" layoutX="69.0" layoutY="90.0" mnemonicParsing="false" onAction="#click_transferT" styleClass="button1" text="Перевести" />
+                        <SplitMenuButton fx:id="spInput" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" styleClass="sm" text="Выбрать">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#mi_binary_1" text="BINARY" />
+                            <MenuItem mnemonicParsing="false" onAction="#mi_decimal_1" text="DECIMAL" />
+                          </items>
+                        </SplitMenuButton>
+                        <SplitMenuButton fx:id="spOutput" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" styleClass="sm" text="Выбрать">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#mi_binary_2" text="BINARY" />
+                              <MenuItem mnemonicParsing="false" onAction="#mi_decimal_2" text="DECIMAL" />
+                           </items>
+                        </SplitMenuButton>
+                        <Text layoutX="16.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Перевести из" />
+                        <Text layoutX="16.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Перевести в" />
+                     </children>
+                  </Pane>
+               </content></Tab>
+            <Tab fx:id="finance" text="Финансы">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textUSD" layoutX="31.0" layoutY="25.0" prefHeight="25.0" prefWidth="51.0" styleClass="text" />
+                        <TextField fx:id="textEUR" layoutX="143.0" layoutY="25.0" prefHeight="25.0" prefWidth="51.0" styleClass="text" />
+                        <TextField fx:id="textCNY" layoutX="143.0" layoutY="72.0" prefHeight="25.0" prefWidth="51.0" styleClass="text" />
+                        <TextField fx:id="textUAH" layoutX="31.0" layoutY="72.0" prefHeight="25.0" prefWidth="51.0" styleClass="text" />
+                        <Text layoutX="36.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Доллар" />
+                        <Text layoutX="155.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Евро" textAlignment="CENTER" />
+                        <Text layoutX="152.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Юань" textAlignment="CENTER" />
+                        <Text layoutX="37.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Гривна" textAlignment="CENTER" />
+                        <SplitMenuButton fx:id="menuF1" layoutX="13.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Валюты">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#miUSD1" text="Доллар" />
+                              <MenuItem mnemonicParsing="false" onAction="#miEUR1" text="Евро" />
+                              <MenuItem mnemonicParsing="false" onAction="#miUAH1" text="Гривна" />
+                              <MenuItem mnemonicParsing="false" onAction="#miCNY1" text="Юань" />
+                          </items>
+                        </SplitMenuButton>
+                        <TextField fx:id="textInputF1" layoutX="13.0" layoutY="125.0" prefHeight="25.0" prefWidth="85.0" styleClass="text" />
+                        <TextField fx:id="textOutputF1" layoutX="14.0" layoutY="223.0" prefHeight="25.0" prefWidth="85.0" styleClass="text" />
+                        <TextField fx:id="textInputF2" layoutX="129.0" layoutY="125.0" prefHeight="27.0" prefWidth="85.0" styleClass="text" />
+                        <Button layoutX="13.0" layoutY="189.0" maxHeight="27.0" maxWidth="-Infinity" minHeight="0.0" mnemonicParsing="false" onAction="#butF1" prefHeight="27.0" prefWidth="85.0" styleClass="sm" text="Перевод" />
+                        <TextField fx:id="textOutputF2" layoutX="128.0" layoutY="223.0" prefHeight="25.0" prefWidth="85.0" styleClass="text" />
+                        <Text layoutX="35.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В рубли" textAlignment="CENTER" />
+                        <Text layoutX="138.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Из валюты" textAlignment="CENTER" />
+                        <Button layoutX="129.0" layoutY="189.0" maxHeight="27.0" maxWidth="-Infinity" minHeight="0.0" mnemonicParsing="false" onAction="#butF2" prefHeight="27.0" prefWidth="85.0" styleClass="sm" text="Перевод" />
+                        <SplitMenuButton fx:id="menuF2" layoutX="128.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Валюты">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#miUSD2" text="Доллар" />
+                              <MenuItem mnemonicParsing="false" onAction="#miEUR2" text="Евро" />
+                              <MenuItem mnemonicParsing="false" onAction="#miUAH2" text="Гривна" />
+                              <MenuItem mnemonicParsing="false" onAction="#miCNY2" text="Юань" />
+                           </items>
+                        </SplitMenuButton>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

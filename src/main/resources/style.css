@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: #C0E0EF;
+}
+.button1 {
+    -fx-background-color: #3C9CC6;
+    -fx-font-size: 14;
+}
+.button1:hover {
+    -fx-background-color: #2666AD ;
+    -fx-border-radius: 4,4,4,4;
+    -fx-border-color: black;
+}
+.equally {
+    -fx-background-color: #67B8D6;
+}
+
+.equally:hover {
+    -fx-background-color: #3FA6CF ;
+    -fx-border-color: black;
+    -fx-border-radius: 4,4,4,4;
+}
+
+
+.text {
+    -fx-background-color: #8CD0E3;
+    -fx-border-color: darkgray;
+    -fx-border-radius: 4,4,4,4;
+}
+
+.text:hover {
+    -fx-background-color: #8EC4FA ;
+    -fx-border-radius: 4,4,4,4;
+    -fx-border-color: black;
+}
+.sm{
+    -fx-color: #3FA6CF;
+}
+.sm:hover {
+    -fx-background-color: #3FA6CF ;
+    -fx-border-color: black;
+    -fx-border-radius: 4,4,4,4;
+}
+
+.tab-pane{
+    -fx-color: #C0E0EF;
+}
+.tab-pane *.tab-header-background {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, derive(-fx-color, -20%);
+    -fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);
+}
